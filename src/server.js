@@ -32,10 +32,7 @@ app.get('/', (request, response) => {
 });
 app.get('/about', (request, response) => {
     response.render('about');
-});
-app.get('/places', (request, response) => {
-    response.render('places');
-});
+});;
 app.get('*', (request, response) => {
     response.render('404error');
 });
