@@ -163,6 +163,7 @@
   width: 0%;
   display: none;
   position: fixed;
+  margin-top: 3rem;
   right: 0;
   z-index: 5;
   height: 2.2em;
