@@ -1,0 +1,329 @@
+@font-face {
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Oxygen', sans-serif;
+  font-family: 'RocknRoll One', sans-serif;
+  font-family: 'Varela', sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@100&family=Oxygen:wght@300&family=RocknRoll+One&family=Varela&display=swap");
+}
+
+.m-nav {
+  width: 100%;
+  height: 15vh;
+  background-color: #ffd700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  top: 0;
+  position: fixed;
+  z-index: 3;
+}
+
+.left-nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: auto;
+}
+
+.left-nav.left-nav img {
+  width: 10rem;
+}
+
+.right-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 70%;
+}
+
+[class*=nav-ul] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: auto;
+}
+
+.right-nav-ul li {
+  float: right;
+  padding: 5px 10px 5px 10px;
+  border: 2.5px solid #074392;
+  border-radius: 2px;
+  margin-left: 1rem;
+  font-weight: 500;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 10px #ff520150;
+          box-shadow: 2px 2px 10px #ff520150;
+}
+
+.right-nav-ul li a {
+  color: #8f8f8f;
+  font-family: 'Oxygen', sans-serif;
+  text-decoration: none;
+  -webkit-transform: 0.3s;
+          transform: 0.3s;
+  font-weight: 700;
+}
+
+.right-nav-ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #000e36;
+  color: #074392;
+}
+
+.right-nav-ul li:hover .nav-a {
+  color: #FEFFFF;
+}
+
+.logo {
+  font-size: 300%;
+}
+
+.sidebar {
+  display: none;
+  width: 0%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  padding-top: 5rem;
+  z-index: 4;
+  top: 0;
+  right: 0;
+  background-color: #000e36;
+  overflow: hidden;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.sidebar .sidebar-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+
+.sidebar .sidebar-ul li {
+  margin-left: 30px;
+  max-width: 8rem;
+  padding: 5px 10px 5px 10px;
+  border: 2.5px solid #FEFFFF;
+  border-radius: 2px;
+  margin-top: 1rem;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 500;
+}
+
+.sidebar .sidebar-ul li a {
+  text-decoration: none;
+  color: #FEFFFF;
+  font-weight: 700;
+}
+
+.sidebar .sidebar-ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #acacac;
+  color: #074392;
+}
+
+.burger {
+  width: 0%;
+  display: none;
+  position: fixed;
+  right: 0;
+  z-index: 5;
+  height: 2.2em;
+  cursor: pointer;
+}
+
+.burger .top,
+.burger .mid,
+.burger .bot {
+  height: 0.3em;
+  background: #b1b1b1;
+  position: absolute;
+  width: 2em;
+  left: 0;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  border-radius: 3px;
+}
+
+.burger .top {
+  margin: 0;
+}
+
+.burger .mid {
+  top: 0.5em;
+  -webkit-transform: all 150ms;
+          transform: all 150ms;
+}
+
+.burger .bot {
+  top: 1em;
+}
+
+.active .mid {
+  opacity: 0;
+  width: 0;
+}
+
+.active .top,
+.active .bot {
+  margin-top: 0.66667em;
+}
+
+.active .top {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.active .bot {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
+}
+
+@media only screen and (max-width: 847px) {
+  .right-nav {
+    width: 0%;
+    display: none;
+  }
+  .left-nav {
+    width: 100%;
+  }
+  .burger {
+    display: block;
+    width: 15%;
+  }
+  .sidebar {
+    display: block;
+  }
+}
+
+@font-face {
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Oxygen', sans-serif;
+  font-family: 'RocknRoll One', sans-serif;
+  font-family: 'Varela', sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@100&family=Oxygen:wght@300&family=RocknRoll+One&family=Varela&display=swap");
+}
+
+footer {
+  height: 20vh;
+}
+
+.social {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social li {
+  padding: 1rem;
+}
+
+.social i {
+  color: #dd0000;
+  font-size: 300%;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.social i:hover {
+  color: #ffd700;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.copyright {
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+div {
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #000e36;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.loading-page {
+  width: 100%;
+  height: 0;
+}
+
+.main-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #FEFFFF;
+}
+/*# sourceMappingURL=main.css.map */
