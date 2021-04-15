@@ -1,34 +1,48 @@
+/** Importing required files */
 const express = require('express');
-const hbs = require('hbs');
-const app = express();
 const path = require('path');
+const hbs = require('hbs');
 const chalk = require('chalk');
 
 
-//**Adding hbs engine */
+
+
+/** setiing up oprating variables */
+const app = express();
+
+/** setting up hbs engine */
 app.set("view engine", "hbs");
 
-//** adding all paths */
+//** setting up required paths */
 const staticPath = path.join(__dirname, "../public");
-const viewsPath = path.join(__dirname, "../templates/views");
-const partialsPath = path.join(__dirname, "../templates/partials");
-//** Declearingg the staic paths */
-app.use(express.static(staticPath));
-app.set("views", viewsPath);
-hbs.registerPartials(partialsPath);
+const viewPath = path.join(__dirname, "../template/views");
+const partialPath = path.join(__dirname, "../template/partials");
 
-//** PORT  */
+//** declear those static paths in express */
+
+app.use(express.static(staticPath)); /** it will set path to 'project_root/public */
+app.set("views", viewPath); /** it will set the views folder path 'project_root/templates/views */
+hbs.registerPartials(partialPath); /** it will register those parcels in 'project_root/templates/parcels' folder */
+
+//** page switch  */
+
+app.get('/', (request, response) => {
+    response.render("index");
+
+});
+app.get('/about', (request, response) => {
+    response.render('about');
+});
+app.get('/places', (request, response) => {
+    response.render('places');
+});
+app.get('*', (request, response) => {
+    response.render('404error');
+});
+
+//** PORT  */s
 const PORT = process.env.port || 3000;
-app.listen(process.env.PORT || 3000, function() {
+app.listen(PORT, function() {
     console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+    console.log('server is running ...');
 });
-//** switch pages */
-
-app.get("/", (req, res) => {
-    res.render('index');
-});
-app.get("*", (req, reg) => {
-    res.render('error');
-})
-console.log(chalk.blueBright.underline.inverse(PORT));
-console.log('server is running ...');
