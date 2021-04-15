@@ -91,7 +91,7 @@
 }
 
 .m-content {
-  margin-top: 7rem;
+  margin-top: 7.2rem;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -225,8 +225,7 @@ m-mark {
 }
 
 .my-pic:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  margin: 1rem;
 }
 
 .aboutme {
