@@ -42,56 +42,8 @@
   color: #000e36;
 }
 
-#Group_1 {
-  background-color: beige;
-  padding: 1rem;
-  width: 27rem;
-  height: 23rem;
-  overflow: visible;
-}
-
-#box {
-  fill: #99ff00;
-  stroke: #00701a;
-  stroke-width: 4px;
-  stroke-linejoin: miter;
-  stroke-linecap: butt;
-  stroke-miterlimit: 4;
-  shape-rendering: auto;
-}
-
-.box {
-  left: 0;
-  top: 0;
-  -webkit-filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.349));
-          filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.349));
-  overflow: visible;
-  position: relative;
-  width: 404.443px;
-  height: 333.637px;
-  -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
-          transform: matrix(1, 0, 0, 1, 0, 0);
-}
-
-#text {
-  -webkit-filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
-          filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
-  position: absolute;
-  overflow: visible;
-  width: 287px;
-  top: 30px;
-  height: 250px;
-  margin-left: 5rem;
-  text-align: left;
-  font-family: Tw Cen MT;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  color: #effff0;
-}
-
 .m-content {
-  margin-top: 7.2rem;
+  margin-top: 3.7rem;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -109,6 +61,7 @@
 }
 
 .row {
+  margin: auto;
   width: 100%;
   padding: 1rem;
   -webkit-box-align: center;
@@ -135,37 +88,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70vh;
+  height: 80vh;
   padding: 0;
-}
-
-.r1-back:before {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  position: absolute;
-  content: '';
-  width: 50%;
-  height: 12rem;
-  bottom: 4rem;
-  left: 0;
-  background: #ffd700;
-  -webkit-transform: skewY(10deg);
-          transform: skewY(10deg);
-}
-
-.r1-back::after {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  position: absolute;
-  content: '';
-  width: 50%;
-  height: 12rem;
-  bottom: 4rem;
-  right: 0;
-  background: #ffd700;
-  -webkit-transform: skewY(-10deg);
-          transform: skewY(-10deg);
-  z-index: 1;
 }
 
 m-mark {
@@ -209,7 +133,7 @@ m-mark {
 
 .profile {
   position: relative;
-  width: 15rem;
+  width: 14rem;
   margin-top: 1.2rem;
   border: 1px solid #ffd700;
   border-radius: 10px;
@@ -226,6 +150,54 @@ m-mark {
 
 .my-pic:hover {
   margin: 1rem;
+}
+
+#Group_1 {
+  background-color: beige;
+  padding: 1rem;
+  width: 27rem;
+  height: 23rem;
+  overflow: visible;
+}
+
+#box {
+  fill: #99ff00;
+  stroke: #00701a;
+  stroke-width: 4px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+
+.box {
+  left: 0;
+  top: 0;
+  -webkit-filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.349));
+          filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.349));
+  overflow: visible;
+  position: relative;
+  width: 303.443px;
+  height: 222.637px;
+  -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+          transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#text {
+  -webkit-filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+          filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+  position: absolute;
+  overflow: visible;
+  width: 187px;
+  top: 30px;
+  height: 150px;
+  margin-left: 5rem;
+  text-align: left;
+  font-family: Tw Cen MT;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  color: #effff0;
 }
 
 .aboutme {
@@ -275,11 +247,20 @@ m-mark {
           transform: scale(1.4);
 }
 
+.skill-tag {
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 25vh;
+}
+
 .skills {
   background: -webkit-gradient(linear, left top, left bottom, from(#4efcf0), color-stop(55%, #1fdb7d), color-stop(80%, #afff47));
   background: linear-gradient(180deg, #4efcf0 0%, #1fdb7d 55%, #afff47 80%);
-  padding-top: 10rem;
-  height: 180vh;
 }
 
 .skills .items {
@@ -433,29 +414,6 @@ m-mark {
 }
 
 @media only screen and (max-width: 847px) {
-  .r1-back:before {
-    position: absolute;
-    content: '';
-    width: 50%;
-    height: 7rem;
-    bottom: 0.8rem;
-    left: 0;
-    background: #ffd700;
-    -webkit-transform: skewY(10deg);
-            transform: skewY(10deg);
-  }
-  .r1-back::after {
-    position: absolute;
-    content: '';
-    width: 50%;
-    height: 7rem;
-    bottom: 0.8rem;
-    right: 0;
-    background: #ffd700;
-    -webkit-transform: skewY(-10deg);
-            transform: skewY(-10deg);
-    z-index: 1;
-  }
   .r1-back {
     height: 80vh;
   }
@@ -479,6 +437,20 @@ m-mark {
   .skill-tag h2:hover i {
     -webkit-transform: scale(1.4);
             transform: scale(1.4);
+  }
+  .profile {
+    position: relative;
+    width: 10rem;
+    margin-top: 0.3rem;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  html {
+    font-size: 80%;
+  }
+  .m-content {
+    margin-top: 5rem;
   }
 }
 /*# sourceMappingURL=index.css.map */

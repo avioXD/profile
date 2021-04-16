@@ -32,13 +32,16 @@ app.get('/', (request, response) => {
 });
 app.get('/about', (request, response) => {
     response.render('about');
+});
+app.get('/blog', (request, response) => {
+    response.render('blog');
 });;
 app.get('*', (request, response) => {
     response.render('404error');
 });
 
 //** PORT  */s
-const PORT = process.env.PORT || 3003;
+const PORT = process.env.PORT || 8000;
 app.listen(PORT, function() {
     console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
     console.log('server is running ...');

@@ -11,7 +11,7 @@ openSidebar = () => {
     let sidebar = document.querySelector(".sidebar");
     console.log(sidePanel);
     if (!sidePanel) {
-        sidebar.style.width = '40%';
+        sidebar.style.width = '60%';
         // sidebar.style.display = "block";
         sidePanel = true;
     } else {

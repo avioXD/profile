@@ -163,7 +163,7 @@
   width: 0%;
   display: none;
   position: fixed;
-  margin-top: 3rem;
+  margin-top: 2rem;
   right: 0;
   z-index: 5;
   height: 2.2em;
@@ -229,9 +229,19 @@
   .burger {
     display: block;
     width: 15%;
+    margin-top: 0.5rem;
   }
   .sidebar {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  .m-nav {
+    position: fixed;
+  }
+  .burger {
+    margin-top: 1.5rem;
   }
 }
 
