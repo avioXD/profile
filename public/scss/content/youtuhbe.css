@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
+.m-btn {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 9rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 2rem;
+  padding: 20px 15px 20px 15px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid #ffd700;
+  border-radius: 5px;
+  color: #FEFFFF;
+  font-weight: 700;
+  outline: none;
+  background: transparent;
+  text-transform: uppercase;
+  background-image: linear-gradient(45deg, #ffd700 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background .3s ease-in-out, color .6s ease-in-out;
+  transition: background .3s ease-in-out, color .6s ease-in-out;
+  -webkit-box-shadow: 4px 4px 10px #8f8f8f;
+          box-shadow: 4px 4px 10px #8f8f8f;
+}
+
+.m-btn:hover {
+  background-position: 0;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+  color: #000e36;
+}
+
+/*copied from code pen*/
+h1 {
+  font-weight: 100;
+  font-size: 27pt;
+  color: #E43;
+}
+
+p {
+  font-weight: 300;
+}
+
+.warning-content {
+  padding-top: 10rem;
+  display: block;
+  height: 100vh;
+  display: block;
+  background: #EEEEF4;
+  color: #999;
+  font-family: Roboto;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.m-content {
+  margin-top: 3.7rem;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 100%;
+}
+/*# sourceMappingURL=youtuhbe.css.map */

@@ -5,8 +5,6 @@ const hbs = require('hbs');
 const chalk = require('chalk');
 
 
-
-
 /** setiing up oprating variables */
 const app = express();
 
@@ -30,18 +28,21 @@ app.get('/', (request, response) => {
     response.render("index");
 
 });
-app.get('/about', (request, response) => {
-    response.render('about');
+app.get('/youtube', (request, response) => {
+    response.render('youtube');
 });
 app.get('/blog', (request, response) => {
-    response.render('blog');
-});;
+    response.render("blog");
+});
+app.get('/contactme', (request, response) => {
+    response.render('contactme');
+})
 app.get('*', (request, response) => {
     response.render('404error');
 });
 
 //** PORT  */s
-const PORT = process.env.PORT || 3003;
+const PORT = process.env.PORT || 8000;
 app.listen(PORT, function() {
     console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
     console.log('server is running ...');

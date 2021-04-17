@@ -88,6 +88,7 @@
   margin: auto;
   position: relative;
   width: 70%;
+  cursor: pointer;
 }
 
 .covid-btn-fixed h5 {
