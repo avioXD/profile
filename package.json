@@ -6,7 +6,6 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "nodemon src/server.js"
-
     },
     "author": "avioXd",
     "license": "ISC",
@@ -17,6 +16,8 @@
         "handlebar": "^1.0.0",
         "hbs": "^4.1.1",
         "jquery": "^3.6.0",
-        "nodemon": "^2.0.7"
+        "mongoose": "^5.12.4",
+        "nodemon": "^2.0.7",
+        "validator": "^13.5.2"
     }
 }
