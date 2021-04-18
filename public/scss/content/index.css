@@ -229,6 +229,7 @@ m-mark {
 }
 
 .skill-tag h2 {
+  margin-top: 2rem;
   text-align: center;
   cursor: pointer;
   font-weight: 600;
