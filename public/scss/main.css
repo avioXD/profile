@@ -224,7 +224,7 @@
   .burger {
     display: block;
     width: 15%;
-    margin-top: 0.3rem;
+    margin-top: 0rem;
   }
   .sidebar {
     display: block;
@@ -236,7 +236,7 @@
     position: fixed;
   }
   .burger {
-    margin-top: 1.5rem;
+    margin-top: 0rem;
   }
 }
 
