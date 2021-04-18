@@ -131,14 +131,21 @@
           align-items: center;
 }
 
+.col h3 {
+  height: 10rem;
+}
+
 .col img {
-  width: 70%;
-  margin: 4%;
+  width: 90%;
+  margin: 2%;
 }
 
 @media only screen and (max-width: 812px) {
   .blogs {
     margin-top: 5rem;
+  }
+  .col h3 {
+    height: auto;
   }
 }
 /*# sourceMappingURL=blog.css.map */
