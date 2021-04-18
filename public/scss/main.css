@@ -282,14 +282,14 @@ footer {
 }
 
 .social i {
-  color: #dd0000;
+  color: #FEFFFF;
   font-size: 300%;
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
 }
 
 .social i:hover {
-  color: #ffd700;
+  color: #dd0000;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
